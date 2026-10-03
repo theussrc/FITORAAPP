@@ -1,0 +1,22 @@
+{
+  "name": "FITORA - Receitas que cabem na sua rotina",
+  "short_name": "FITORA",
+  "description": "Biblioteca digital de receitas práticas, equilibradas e deliciosas.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#F7F6F2",
+  "theme_color": "#6B7D62",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

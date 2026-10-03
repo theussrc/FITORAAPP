@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <!-- Gradiente sutil para acabamento premium no Instagram -->
+    <linearGradient id="fitoraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#768A6D" />
+      <stop offset="100%" stop-color="#586950" />
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#2D3828" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Fundo neutro suave (Linho FITORA) -->
+  <rect width="1080" height="1080" fill="#FAF9F5" />
+
+  <!-- Círculo Central Verde Oliva/Sálvia Oficial FITORA -->
+  <circle cx="540" cy="540" r="460" fill="url(#fitoraGrad)" filter="url(#subtleShadow)" />
+
+  <!-- Folha Branca Minimalista Orgânica -->
+  <path d="M360 720 C360 480 540 360 720 360 C720 600 540 720 360 720 Z" fill="#FFFFFF" />
+
+  <!-- Nervura Central da Folha em Verde Sálvia -->
+  <path d="M360 720 L720 360" stroke="#586950" stroke-width="40" stroke-linecap="round" />
+</svg>

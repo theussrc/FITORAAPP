@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  
+  <title>FITORA — Receitas que cabem na sua rotina</title>
+  <meta name="description" content="Biblioteca digital de receitas práticas, saborosas e equilibradas. Receitas fitness simples para o dia a dia sem complicação.">
+  <meta name="theme-color" content="#6B7D62">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="FITORA">
+
+  <!-- Prevenção imediata de FOUC de tema (Light / Dark) -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('fitora_theme_preference');
+        if (savedTheme) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+      } catch(e) {}
+    })();
+  </script>
+
+  <!-- Favicon SVG moderno e minimalista com a identidade FITORA -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%236B7D62'/><path d='M35 65 C35 45 50 35 65 35 C65 55 50 65 35 65 Z' fill='%23FFFFFF'/><path d='M35 65 L65 35' stroke='%236B7D62' stroke-width='4' stroke-linecap='round'/></svg>">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Google Fonts: Outfit (títulos modernos e acolhedores) e Plus Jakarta Sans (interface limpa e refinada) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Folhas de Estilo Modulares -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <!-- Container da Aplicação SPA -->
+  <div id="app">
+    <noscript>
+      <div style="padding: 40px; text-align: center; font-family: sans-serif;">
+        <h2>FITORA</h2>
+        <p>Por favor, ative o JavaScript no seu navegador para acessar sua biblioteca de receitas.</p>
+      </div>
+    </noscript>
+  </div>
+
+  <!-- Script Principal com suporte universal para navegadores -->
+  <script src="js/fitora-bundle.js"></script>
+</body>
+</html>
