@@ -1,0 +1,145 @@
+/**
+ * FITORA - Design System Refinado & Gastronômico
+ * Paleta oficial harmonizada com a referência de cards circulares discretos
+ * Suporte a Tema Claro (Linho Suave) e Tema Escuro Gastronômico (Grafite/Oliva)
+ */
+:root {
+  /* Paleta Oficial FITORA com tons pastéis gastronômicos */
+  --color-bg: #F7F6F2;
+  --color-bg-subtle: #FCFBF9;
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #FFFFFF;
+  
+  /* Verde Principal e Variações Pastéis dos Cards da Referência */
+  --color-primary: #6B7D62;
+  --color-primary-hover: #56674E;
+  --color-primary-light: #DCE4D7;
+  --color-primary-subtle: #EBF3E8;
+  
+  /* Gradientes Pastéis Suaves dos Cards (Idênticos à Imagem de Referência) */
+  --card-green-start: #E8F5E5;
+  --card-green-end: #D8EED2;
+  --card-mint-start: #E2F5EB;
+  --card-mint-end: #CFF0DE;
+  --card-peach-start: #FDEEE9;
+  --card-peach-end: #F8DDD5;
+  --card-lemon-start: #F9F7DD;
+  --card-lemon-end: #F1EDC8;
+
+  --color-text-main: #171717;
+  --color-text-muted: #6B6B66;
+  --color-text-light: #9C9C96;
+  
+  --color-border: #E8E6DF;
+  --color-border-light: #F0EEE8;
+  
+  --color-heart: #E05349;
+  --color-heart-active: #E05349;
+
+  /* Cores Nutricionais dos Macronutrientes */
+  --macro-kcal-bg: #FFF3EB;
+  --macro-kcal-text: #D9531E;
+  --macro-prot-bg: #EAF7EC;
+  --macro-prot-text: #2D8A4E;
+  --macro-carb-bg: #EBF4FC;
+  --macro-carb-text: #2072B8;
+  --macro-fat-bg: #F5EDFA;
+  --macro-fat-text: #8E44AD;
+
+  /* Glassmorphism */
+  --glass-header-bg: rgba(247, 246, 242, 0.92);
+  --glass-nav-bg: rgba(255, 255, 255, 0.88);
+  --glass-card-bg: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.85);
+
+  /* Tipografia */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Espaçamentos */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* Raios e Bordas (Super Arredondados como na Referência) */
+  --radius-xs: 8px;
+  --radius-sm: 14px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-xl: 34px;
+  --radius-pill: 9999px;
+
+  /* Sombras Sutis e Delicadas */
+  --shadow-subtle: 0 2px 8px rgba(23, 23, 23, 0.03);
+  --shadow-card: 0 6px 20px rgba(23, 23, 23, 0.04), 0 1px 3px rgba(23, 23, 23, 0.02);
+  --shadow-card-hover: 0 14px 32px rgba(107, 125, 98, 0.16), 0 3px 10px rgba(0, 0, 0, 0.04);
+  --shadow-plate: 0 14px 28px -4px rgba(22, 28, 20, 0.22), 0 4px 10px -2px rgba(0, 0, 0, 0.08);
+  --shadow-nav: 0 10px 30px rgba(23, 23, 23, 0.08), 0 1px 4px rgba(23, 23, 23, 0.04);
+
+  /* Transições */
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-bounce: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Dimensões Layout */
+  --container-max-width: 1160px;
+  --header-height: 72px;
+  --bottom-nav-height: 64px;
+}
+
+/* ==========================================
+   TEMA ESCURO GASTRONÔMICO (DARK MODE PASTEL)
+   Conforto visual ideal para cozinhar à noite
+   ========================================== */
+[data-theme="dark"] {
+  --color-bg: #141714;
+  --color-bg-subtle: #1B211C;
+  --color-surface: #202721;
+  --color-surface-elevated: #263027;
+  
+  --color-primary: #8CA082;
+  --color-primary-hover: #9FB295;
+  --color-primary-light: #2C382E;
+  --color-primary-subtle: #222B23;
+  
+  --card-green-start: #1D2A20;
+  --card-green-end: #17221A;
+  --card-mint-start: #1C2B25;
+  --card-mint-end: #16241E;
+  --card-peach-start: #2B211E;
+  --card-peach-end: #231B19;
+  --card-lemon-start: #2B2A1E;
+  --card-lemon-end: #222118;
+
+  --color-text-main: #F3F5F2;
+  --color-text-muted: #A3ACA0;
+  --color-text-light: #737B70;
+  
+  --color-border: #2C362D;
+  --color-border-light: #222B23;
+  
+  --macro-kcal-bg: #32211B;
+  --macro-kcal-text: #F39C78;
+  --macro-prot-bg: #1B3122;
+  --macro-prot-text: #78D492;
+  --macro-carb-bg: #182C3D;
+  --macro-carb-text: #79BAEE;
+  --macro-fat-bg: #2B1D35;
+  --macro-fat-text: #D295EE;
+
+  --glass-header-bg: rgba(20, 23, 20, 0.92);
+  --glass-nav-bg: rgba(27, 33, 28, 0.88);
+  --glass-card-bg: rgba(32, 39, 33, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-card: 0 6px 20px rgba(0, 0, 0, 0.35);
+  --shadow-card-hover: 0 14px 32px rgba(0, 0, 0, 0.5), 0 0 20px rgba(140, 160, 130, 0.12);
+  --shadow-plate: 0 16px 32px -4px rgba(0, 0, 0, 0.55);
+  --shadow-nav: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
