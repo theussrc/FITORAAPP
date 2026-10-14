@@ -23,6 +23,31 @@
     })();
   </script>
 
+  <!-- ========================================== -->
+  <!-- INÍCIO DO CÓDIGO DO META PIXEL             -->
+  <!-- ========================================== -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n.define$property?n.define$property(n,'',{})/n:n;n.loaded=!loaded;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    // Substitua 'SEU_PIXEL_ID_AQUI' pelo número de identificação do seu Pixel
+    fbq('init', '1573183717083871'); 
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=1573183717083871&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- ========================================== -->
+  <!-- FIM DO CÓDIGO DO META PIXEL                -->
+  <!-- ========================================== -->
+  
   <!-- Favicon SVG moderno e minimalista com a identidade FITORA -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%236B7D62'/><path d='M35 65 C35 45 50 35 65 35 C65 55 50 65 35 65 Z' fill='%23FFFFFF'/><path d='M35 65 L65 35' stroke='%236B7D62' stroke-width='4' stroke-linecap='round'/></svg>">
   <link rel="manifest" href="manifest.json">
